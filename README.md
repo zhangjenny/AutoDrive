@@ -1,7 +1,8 @@
 # AutoDrive
 
 ## Introduction
-![](supplement/Model/Intro.jpg)
+
+![](supplement/Model/IntroPic.jpg)
 
 In this project, the author designs and implements five enhanced versions of Transfuser with different fusion methods. These successful or failed models are detailed in the table below:
 

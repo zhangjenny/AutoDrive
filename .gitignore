@@ -130,3 +130,5 @@ dmypy.json
 
 */log/*
 */log.zip
+supplement/Model/Intro.jpg
+.gitignore

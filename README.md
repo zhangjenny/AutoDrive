@@ -50,6 +50,12 @@ CUDA_VISIBLE_DEVICES=<gpu_id> python train.py --id transfuser_XXX
 
 It should be noted that users should modify the model hyperparameters in config.py according to their own needs. The author recommends using the default parameters in config.py.
 
+### 4. Report the results
+
+![train_loss](supplement/Train_Valid_Image/train_loss.jpg )![train_mse](supplement/Train_Valid_Image/train_mse.jpg)
+
+![val_loss](supplement/Train_Valid_Image/val_loss.jpg)![val_mse](supplement/Train_Valid_Image/val_mse.jpg )
+
 ## Evaluation
 
 After the model is trained, the log/transfuer_XXX folder will be generated in the folder where it is located, which contains the model parameter files model_X.pth and best_model.pth files saved in each iteration during the model training process. 
@@ -84,9 +90,20 @@ export TEAM_CONFIG=transfuser_XXX/log/transfuser_XXX/best_model.pth
 export CHECKPOINT_ENDPOINT=results/transfuser_XXX_result.json
 export SCENARIOS=leaderboard/data/scenarios/town05_all_scenarios.json
 ```
-
 ### 3. Report the results
 
+|  Model   | Score Composed  | Score Route  | Score Penalty  |
+|  :----  | :----:  | :----:  | :----:  |
+| TransFuser  | 40.72 | 73.25 | 0.64 |
+| TransFuserBifusion  | - | - | - |
+| TransFuserEBiFusion  | -  | -  | - |
+| TransFuserPentaFusion  | **53.12**  | **88.23**  | 0.61 |
+| TransFuserPentaFusionEPool  | 40.07  | 54.29  | 0.79 |
+| TransFuserPentaFusionSE  | 44.73  | 87.80  | **0.52** |
+
+- Score Composed:
+- Score Route:
+- Score Penalty:
 
 
 

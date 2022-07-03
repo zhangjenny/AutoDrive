@@ -1,6 +1,7 @@
 # AutoDrive
 
 ## Introduction
+![](supplement/Model/Intro.jpg)
 
 In this project, the author designs and implements five enhanced versions of Transfuser with different fusion methods. These successful or failed models are detailed in the table below:
 
@@ -101,9 +102,14 @@ export SCENARIOS=leaderboard/data/scenarios/town05_all_scenarios.json
 | TransFuserPentaFusionEPool  | 40.07  | 54.29  | 0.79 |
 | TransFuserPentaFusionSE  | 44.73  | 87.80  | **0.52** |
 
-- Score Composed:
-- Score Route:
-- Score Penalty:
+- Score Composed: Driving Score (DS), which is route completion weighted
+by an infraction multiplier
+
+- Score Route: Route Completion
+(RC), percentage of route distance completed
+
+- Score Penalty: An infraction multiplier that accounts for collisions with pedestrians, vehicles, and static elements, route deviations,
+lane infractions, running red lights, and running stop signs
 
 
 

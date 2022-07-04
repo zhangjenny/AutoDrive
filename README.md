@@ -3,6 +3,7 @@
 ## Introduction
 
 ![](supplement/Model/IntroPic.jpg)
+![Network Architecture](supplement/Model/PentaFusion_model.png)
 
 In this project, the author designs and implements five enhanced versions of Transfuser with different fusion methods. These successful or failed models are detailed in the table below:
 
@@ -97,8 +98,8 @@ export SCENARIOS=leaderboard/data/scenarios/town05_all_scenarios.json
 |  Model   | Score Composed  | Score Route  | Score Penalty  |
 |  :----  | :----:  | :----:  | :----:  |
 | TransFuser  | 40.72 | 73.25 | 0.64 |
-| TransFuserBifusion  | - | - | - |
-| TransFuserEBiFusion  | -  | -  | - |
+| TransFuserBifusion  | 46.44 | 78.76 | 0.61 |
+| TransFuserEBiFusion  | 42.33  | 71.44  | 0.64 |
 | TransFuserPentaFusion  | **53.12**  | **88.23**  | 0.61 |
 | TransFuserPentaFusionEPool  | 40.07  | 54.29  | 0.79 |
 | TransFuserPentaFusionSE  | 44.73  | 87.80  | **0.52** |

@@ -95,6 +95,9 @@ export SCENARIOS=leaderboard/data/scenarios/town05_all_scenarios.json
 ```
 ### 3. Report the results
 
+![Driving Performance](/supplement/Evaluation/DrivingPerformance.png)
+![Penalty](/supplement/Evaluation/ScorePenalty.png)
+
 |  Model   | Score Composed  | Score Route  | Score Penalty  |
 |  :----  | :----:  | :----:  | :----:  |
 | TransFuser  | 40.72 | 73.25 | 0.64 |
@@ -112,7 +115,4 @@ by an infraction multiplier
 
 - Score Penalty: An infraction multiplier that accounts for collisions with pedestrians, vehicles, and static elements, route deviations,
 lane infractions, running red lights, and running stop signs
-
-
-
 
